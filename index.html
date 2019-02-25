@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Strait" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+        <style type="text/css">
+            a.fancybox img {
+                border: none;
+                box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+            } 
+        </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="contact">
+                <img src="img/Foto.jpg" alt="">
+                <div class="about">
+                    <h1>Davy Le Bruyn</h1>
+                    <p>Tweedejaarsstudent Grafische &amp; Digitale Media met een stevige dosis kempische humor en een progressieve blik op het leven.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item blue">
+            <h3>Rebranding</h3>
+            <div class="row">
+                <div class="column">
+                    <img src="img/Rebranding_Antonia_1.PNG" alt="" class="fancybox">
+                    <img src="img/Rebranding_Antonia_2.PNG" alt="" class="fancybox">
+                    <img src="img/Rebranding_Antonia_5.PNG" alt="" class="fancybox">
+                </div>
+                <div class="column">
+                    <img src="img/Rebranding_Antonia_3.PNG" alt="" class="fancybox">
+                    <img src="img/Rebranding_Antonia_4.PNG" alt="" class="fancybox">
+                    <img src="img/Rebranding_Antonia_6.PNG" alt="" class="fancybox">
+                </div>
+            </div>
+        </div>
+
+        <div class="item grey">
+            <h3>Poster Design</h3>
+            <div class="row">
+                <div class="column">
+                    <img src="img/Poster_illustratief.png" alt="" class="fancybox">
+                </div>
+                <div class="column">
+                    <img src="img/Poster_typografisch.png" alt="" class="fancybox">
+                </div>
+            </div>
+        </div>
+
+        <div class="item orange">
+            <h3>Webdesign</h3>
+            <div class="row">
+                <div class="column">
+                    <img src="img/site_next.png" alt="" class="fancybox">
+                </div>
+                <div class="column">
+                    <img src="img/site_wwf.png" alt="" class="fancybox"> 
+                    <img src="img/site_wwf2.png" alt="" class="fancybox">
+                    <img src="img/site_pizzaco.PNG" alt="" class="fancybox">
+                </div>
+            </div>
+        </div>
+
+        <div class="item grey">
+            <h3>3D-design</h3>
+            <div class="row">
+                <div class="column">
+                    <img src="img/3D_Modeling_1.png" alt="" class="fancybox">
+                </div>
+                <div class="column">
+                    <img src="img/3D_Modeling_2.jpg" alt="" class="fancybox">
+                    <img src="img/3D_Modeling_3.jpg" alt="" class="fancybox">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer yellow">
+            <p>Davy Le Bruyn &copy; 2019 AP Hogeschool</p>
+        </div>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+        <script type="text/javascript">
+            $(function($){
+                var addToAll = false;
+                var gallery = true;
+                var titlePosition = 'inside';
+                $(addToAll ? 'img' : 'img.fancybox').each(function(){
+                    var $this = $(this);
+                    var title = $this.attr('title');
+                    var src = $this.attr('data-big') || $this.attr('src');
+                    var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                    $this.wrap(a);
+                });
+                if (gallery)
+                    $('a.fancybox').attr('rel', 'fancyboxgallery');
+                $('a.fancybox').fancybox({
+                    titlePosition: titlePosition
+                });
+            });
+            $.noConflict();
+        </script>
+
+    </body>
+</html>
