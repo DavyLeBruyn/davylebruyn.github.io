@@ -7,12 +7,6 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Strait" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
-        <style type="text/css">
-            a.fancybox img {
-                border: none;
-                box-shadow: 0 1px 7px rgba(0,0,0,0.6);
-            } 
-        </style>
     </head>
     <body>
 
@@ -80,34 +74,22 @@
                 </div>
             </div>
         </div>
+        
+        <div class="item yellow">
+            <h3>Video &amp; Animatie</h3>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/FNFlCWPiDv4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/4cSUbvpY_bE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/GP6ynNfxXv4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-        <div class="footer yellow">
+        <div class="footer grey">
             <p>Davy Le Bruyn &copy; 2019 AP Hogeschool</p>
         </div>
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
-        <script type="text/javascript">
-            $(function($){
-                var addToAll = false;
-                var gallery = true;
-                var titlePosition = 'inside';
-                $(addToAll ? 'img' : 'img.fancybox').each(function(){
-                    var $this = $(this);
-                    var title = $this.attr('title');
-                    var src = $this.attr('data-big') || $this.attr('src');
-                    var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
-                    $this.wrap(a);
-                });
-                if (gallery)
-                    $('a.fancybox').attr('rel', 'fancyboxgallery');
-                $('a.fancybox').fancybox({
-                    titlePosition: titlePosition
-                });
-            });
-            $.noConflict();
-        </script>
+        <script type="text/javascript" src="js/script.js"></script>
 
     </body>
 </html>

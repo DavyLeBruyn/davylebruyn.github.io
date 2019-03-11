@@ -11,6 +11,11 @@ h1, h2 {
     color: firebrick;
 }
 
+a.fancybox img {
+    border: none;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+} 
+
 .item h3 {
     font-family: 'Strait', sans-serif;
     font-size: 250%;
