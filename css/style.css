@@ -1,128 +1,125 @@
 body {
-    width: 100%;
-    height: auto;
-    background-color: white;
-    margin: 0;
+    /*    background-color: beige;*/
+    font-family: 'Gelasio', serif;
 }
 
-h1, h2 {
-    font-family: 'Strait', sans-serif;
-    margin: 10px 0;
-    color: firebrick;
+li {
+    padding: 5px 0;
+    line-height: 16pt;
 }
 
-a.fancybox img {
-    border: none;
-    box-shadow: 0 1px 7px rgba(0,0,0,0.6);
-} 
-
-.item h3 {
-    font-family: 'Strait', sans-serif;
-    font-size: 250%;
-    padding-bottom: 30px;
+p {
+    line-height: 18pt;
 }
 
-p, a {
-    font-family: 'Strait', sans-serif;
+.arrow {
+    height: 120px;
+    width: auto;
+    position: absolute;
+    left: 160px;
+    top: 250px;
+    z-index: 1;
 }
 
-.header {
-    text-align: center;
-    font-size: 120%;
-    padding: 10px;
-    height: 100vh;
-    background-color: #FFD464;
-    color: #F26963;
-    background-image: url(portfolio.png);
-    background-size: cover;
+.color {
+    color: #ffd500;
 }
 
-.header h1 {
-    color: #F26963;
+.macbook-container {
+    background-image: url("../img/macbook.png");
+    width: 1327px;
+    height: 716px;
+    transform: scale(0.7)
 }
 
-.contact {
-    text-align: center;
-    max-width: 400px;
-    margin: 80px auto;
+.iphone-container {
+    background-image: url("../img/iphone.png");
+    width: 419px;
+    height: 840px;
+    transform: scale(0.6);
+    margin-left: 40%;
+    position: relative;
+    bottom: 100px;
 }
 
-.contact img {
-    width: 250px;
-    height: auto;
-    border-radius: 50%;
-    border: 20px solid #F26963;
-}
-
-.contact img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-.item {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    width: 80%;
+.site-img {
+    width: 870px;
+    height: 555px;
+    overflow: auto;
     margin: 0 auto;
+    position: relative;
+    top: 50px;
 }
 
-.column {
-    flex: 45%;
-    max-width: 45%;
-    padding: 0px 8px;
-}
-
-.column img {
-    margin-top 8px;
-    vertical-align: middle;
-    max-width: 100%;
+.site-img img {
+    width: 870px;
     height: auto;
-    margin: 10px;
 }
 
-.column img:hover {
-    transform: scale(1.02);
-    cursor: pointer;
+.mobile-img {
+    width: 350px;
+    height: 700px;
+    overflow: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 110px;
 }
 
-
-.orange {
-    background-color: #F26963;
-    color: white;
+.mobile-img img {
+    width: 350px;
+    height: auto;
 }
 
-.grey {
-    background-color: #F1F0EE;
-    color: #F26963;
+.info-container {
+    position: absolute;
+    top: 100px;
+    width: 300px;
+    text-align: initial;
 }
 
-.blue {
-    background-color: #1352A2;
-    color: white;
+.poster {
+    transform: scale(0.9);
+    margin-left: 30%;
 }
 
-.yellow {
-    background-color: #FFD464;
-    color: white;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
-.footer {
-    text-align: center;
-    border-top: 1px solid white;
-    padding: 10px;
-    margin: 0;
-    color: #F26963;
+#skills {
+    width: 200px;
+    text-align: right;
+    padding-left: 200px;
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
+#ratings {
+    width: 200px;
+    padding-right: 200px;
+}
+
+.sm {
+    font-size: 70%;
+}
+
+.sm-2 {
+    font-size: 80%;
+}
+
+.hidden {
+    overflow: hidden;
+    background-color: black;
+}
+
+.checked {
+    color: #ffed94;
+}
+
+.title {
+    position: absolute;
+    top: -100px;
+}
+
+@media only screen and (max-width: 1600px) {
+
 }
