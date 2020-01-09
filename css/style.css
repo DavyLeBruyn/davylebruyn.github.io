@@ -21,8 +21,16 @@ p {
     z-index: 1;
 }
 
+.arrow-2 {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    left: 250px;
+    top: 500px;
+}
+
 .color {
-    color: #ffd500;
+    color: #ffcc00;
 }
 
 .macbook-container {
@@ -57,8 +65,6 @@ p {
 }
 
 .mobile-img {
-    width: 350px;
-    height: 700px;
     overflow: auto;
     margin: 0 auto;
     position: relative;
@@ -68,6 +74,13 @@ p {
 .mobile-img img {
     width: 350px;
     height: auto;
+}
+
+.site-html {
+    overflow: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
 }
 
 .info-container {
@@ -112,7 +125,7 @@ p {
 }
 
 .checked {
-    color: #ffed94;
+    color: #e3e3e3;
 }
 
 .title {
@@ -120,6 +133,6 @@ p {
     top: -100px;
 }
 
-@media only screen and (max-width: 1600px) {
-
+.transform {
+    transform: scale(0.7);
 }
