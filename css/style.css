@@ -16,6 +16,20 @@ h1 {
     padding: 5px 0;
 }
 
+.content h1:hover {
+    text-decoration: line-through;
+    cursor: default;
+}
+
+p a {
+    text-decoration: none;
+    color: #009EE2;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
 button {
     color: white;
     padding: 15px 20px;
@@ -23,14 +37,13 @@ button {
     border-radius: 30px;
     border: none;
     font-weight: bold;
-    transition: all 0.4s ease 0s;
 }
 
 button:hover {
     -webkit-box-shadow: 0px 5px 40px -15px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 40px -15px rgba(0,0,0,0.57);
     transition: all 0.4s ease 0s;
-    background-color: #005BA9;
+    background-color: #009EE2;
 }
 
 #about {
@@ -154,6 +167,10 @@ button:hover {
     position: relative;
     background-color: black;
     border: grey solid 1px;
+}
+
+.site-img:hover {
+    cursor: s-resize;
 }
 
 .site-img img {
