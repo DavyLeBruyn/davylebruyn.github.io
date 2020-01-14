@@ -61,6 +61,12 @@ button:hover {
     margin: auto;
 }
 
+.me {
+    width: 30%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
 .blue {
     background-color: #005BA9;
 }
@@ -265,7 +271,7 @@ button:hover {
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
