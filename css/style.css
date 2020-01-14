@@ -137,6 +137,20 @@ button:hover {
     left: 50px; 
 }
 
+.link {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+.fa-link {
+    color: white;
+}
+
+.fa-link:hover {
+    color: #009EE2;
+}
+
 .info-container {
     position: absolute;
     bottom: 50px;
@@ -244,7 +258,7 @@ button:hover {
 
 .footer {
     padding: 30px;
-    color: white;
+    color: #A1A1A1;
     font-size: 80%;
     text-align: center;
     background-color: #222222;
@@ -266,6 +280,58 @@ button:hover {
     background: #555; 
 }
 
+.fade {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
 
 @media only screen and (max-width: 800px) {
     .grid-container {

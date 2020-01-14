@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head>        
         <meta charset="UTF-8">
-        <title>Portfolio van Davy Le Bruyn</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
         <meta property="og:image" content="img/icon.ico" />
         <meta property="og:description" content="Portfolio van Davy Le Bruyn, derdejaarsstudent Grafische & Digitale Media aan de AP Hogeschool in Antwerpen." />
         <meta property="og:url"content="https://davylebruyn.github.io/" />
         <meta property="og:title" content="Portfolio Davy Le Bruyn" />
 
+        <title>Portfolio van Davy Le Bruyn</title>
 
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.typekit.net/ezg6evg.css">
         <link rel="icon" href="img/icon.ico">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+        <script src="https://kit.fontawesome.com/9ecc97d8d3.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <main class="grid-container">
@@ -24,7 +24,7 @@
 
                 <!--ABOUT-->
                 <section id="about">
-                    <div class="content">
+                    <div class="content fade">
                         <h1>DAVY</h1>
                         <h1>LE BRUYN.</h1>
                         <h1>DESIGNER.</h1>
@@ -39,18 +39,17 @@
                 </section>
 
             </div>
-
             <div class="overflow grid-container-height">
 
                 <!--ITEM 1-->
                 <section class="item yellow">
-                    <p class="number">.001</p>
-                    <div class="info-container">
+                    <p class="number fade">.001</p>
+                    <div class="info-container fade">
                         <p>Het maken van een editorial voor een bekende grafisch designer.</p>
                         <br>
                         <p class="sm">Illustrator, Photoshop.</p>
                     </div>
-                    <div class="macbook-container">
+                    <div class="macbook-container fade">
                         <div class="site-img">
                             <img src="img/site-next.png" alt="">
                         </div>
@@ -65,7 +64,7 @@
                         <br>
                         <p class="sm">HTML, CSS.</p>
                     </div>
-                    <div class="macbook-container">
+                    <div class="macbook-container fade">
                         <div class="site-img">
                             <img src="img/site-wwf.png" alt="">
                         </div>
@@ -80,7 +79,8 @@
                         <br>
                         <p class="sm">Node.js, Javascript, HTML, CSS.</p>
                     </div>
-                    <div class="img-container-1"></div>
+                    <p class="link"><a href="https://toila.herokuapp.com/" target="_blank"><i class="fas fa-link fa-2x"></i></a></p>
+                    <div class="img-container-1 fade"></div>
                 </section>
 
                 <!--ITEM 4-->
@@ -91,7 +91,7 @@
                         <br>
                         <p class="sm">Illustrator.</p>
                     </div>
-                    <div class="img-container-2"></div>
+                    <div class="img-container-2 fade"></div>
                 </section>                   
 
                 <!--ITEM 5-->
@@ -102,7 +102,7 @@
                         <br>
                         <p class="sm">After Effects, Photoshop, Illustrator.</p>
                     </div>
-                    <div class="img-container-3"></div>
+                    <div class="img-container-3 fade"></div>
                 </section>
 
                 <!--ITEM 6-->
@@ -113,7 +113,7 @@
                         <br>
                         <p class="sm">Illustrator.</p>
                     </div>
-                    <div class="macbook-container">
+                    <div class="macbook-container fade">
                         <div class="site-img">
                             <img src="img/infographic.png" alt="">
                         </div>
@@ -128,7 +128,7 @@
                         <br>
                         <p class="sm">Illustrator, After Effects.</p>
                     </div>
-                    <div class="macbook-container">
+                    <div class="macbook-container fade">
                         <div class="site-img hidden">
                             <video controls>
                                 <source src="img/lyric-video.mp4" type="video/mp4">
@@ -139,7 +139,7 @@
                 </section>
 
                 <!--SKILLS-->
-                <section class="light-grey">
+                <section class="light-grey fade">
                     <div class="skillset">
                         <h1 class="color">Skillset.</h1>
 
@@ -177,12 +177,16 @@
                     </div>
                 </section>
 
-                <!--SKILLS-->
+                <!--FOOTER-->
                 <section class="footer">
-                    <p>Gemaakt door Davy Le Bruyn - Custom in HTML en CSS.</p>
+                    <p>Gemaakt door Davy Le Bruyn - HTML en CSS.</p>
                 </section>
 
             </div>
         </main>
+
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
