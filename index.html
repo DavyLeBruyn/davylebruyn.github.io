@@ -5,33 +5,42 @@
         <title>Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/reveal.css">
-        <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/9ecc97d8d3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/ezg6evg.css">
     </head>
     <body>
-        <div class="reveal">
-            <div class="slides">
-                <!--HOME-->
-                <section>
-                    <h1>Davy Le Bruyn | <span class="color">Portfolio</span></h1>
-                    <p>Gebruik de pijltoetsen om te navigeren.</p>
-                    <br>
-                    <br>
-                    <br>
-                    <p class="sm">(MOBIELE VERSIE ONDER CONSTRUCTIE)</p>
+        <main class="grid-container">
+            <div class="white grid-container-height">
+
+                <!--ABOUT-->
+                <section id="about">
+                    <div class="content">
+                        <h1>DAVY</h1>
+                        <h1>LE BRUYN.</h1>
+                        <h1>DESIGNER.</h1>
+                        <h1>PORTFOLIO.</h1>
+                        <br>
+                        <br>
+                        <p>Derdejaarsstudent Grafische &amp; Digitale Media aan de AP Hogeschool in Antwerpen.</p>
+                        <br>
+                        <br>
+                        <a href="mailto:davy.lebruyn@student.ap.be"><button class="light-blue mail" title="davy.lebruyn@student.ap.be">Zeg eens Hallo!</button></a>
+                    </div>
                 </section>
 
+            </div>
+
+            <div class="overflow grid-container-height">
+
                 <!--ITEM 1-->
-                <section>
+                <section class="item yellow">
+                    <p class="number">.001</p>
                     <div class="info-container">
-                        <h1 class="color">01.</h1>
                         <p>Het maken van een editorial voor een bekende grafisch designer.</p>
                         <br>
                         <p class="sm">Illustrator, Photoshop.</p>
                     </div>
-                    <img src="img/arrow.png" alt="" class="arrow">
                     <div class="macbook-container">
                         <div class="site-img">
                             <img src="img/site-next.png" alt="">
@@ -40,10 +49,10 @@
                 </section>
 
                 <!--ITEM 2-->
-                <section>
+                <section class="item blue">
+                    <p class="number">.002</p>
                     <div class="info-container">
-                        <h1 class="color">02.</h1>
-                        <p>Het hernieuwen van een bestaande website.</p>
+                        <p>Het vernieuwen van een bestaande website.</p>
                         <br>
                         <p class="sm">HTML, CSS.</p>
                     </div>
@@ -51,62 +60,46 @@
                         <div class="site-img">
                             <img src="img/site-wwf.png" alt="">
                         </div>
-                    </div> 
+                    </div>
                 </section>
 
                 <!--ITEM 3-->
-                <section>
+                <section class="item green">
+                    <p class="number">.003</p>
                     <div class="info-container">
-                        <h1 class="color">03.</h1>
-                        <p>Een volledig functionerende Node.js applicatie die gebruikt maakt van een json database van de stad Antwerpen.</p>
-                        <a href="https://toila.herokuapp.com/">https://toila.herokuapp.com/</a>
-                        <br>
-                        <p>De gebruiker kan:</p>
-                        <ul class="sm-2">
-                            <li>Naar zijn huidige locatie gaan.</li>
-                            <li>Filteren op bepaalde criteria.</li>
-                            <li>Zowel mobiel als op desktop de applicatie gebruiken.</li>
-                        </ul>
+                        <p>Een volledig functionerende Node.js applicatie.</p>
                         <br>
                         <p class="sm">Node.js, Javascript, HTML, CSS.</p>
                     </div>
-                    <img src="img/arrow-3.png" alt="" class="arrow-2">
-                    <div class="iphone-container">
-                        <div class="mobile-img">
-                            <object type="text/html" data="https://toila.herokuapp.com/" width="350px" height="620px"></object>
-                        </div>
-                    </div> 
+                    <div class="img-container-1"></div>
                 </section>
 
                 <!--ITEM 4-->
-                <section>
+                <section class="item grey">
+                    <p class="number">.004</p>
                     <div class="info-container">
-                        <h1 class="color">04.</h1>
                         <p>Een poster voor de bloemenbeurs "Fleur Amour" in de grafische stijl Memphis Group.</p>
                         <br>
-                        <p class="sm">Illustrator</p>
+                        <p class="sm">Illustrator.</p>
                     </div>
-                    <img src="img/poster-fleuramour.png" alt="" class="poster">
-                </section>
+                    <div class="img-container-2"></div>
+                </section>                   
 
                 <!--ITEM 5-->
-                <section>
+                <section class="item tourqoise">
+                    <p class="number">.005</p>
                     <div class="info-container">
-                        <h1 class="color">05.</h1>
                         <p>Een poster voor een grafische conventie genaamd Gravity.</p>
-                        <br>
-                        <p class="sm-2">De poster is gemaakt door te experimenteren met bewegende objecten met blurs, filters, etc.</p>
                         <br>
                         <p class="sm">After Effects, Photoshop, Illustrator.</p>
                     </div>
-                    <img src="img/poster-gravity.png" alt="" class="poster">
+                    <div class="img-container-3"></div>
                 </section>
 
-
                 <!--ITEM 6-->
-                <section>
+                <section class="item light-blue">
+                    <p class="number">.006</p>
                     <div class="info-container">
-                        <h1 class="color">06.</h1>
                         <p>Infographic met zelf geturfde data.</p>
                         <br>
                         <p class="sm">Illustrator.</p>
@@ -115,20 +108,20 @@
                         <div class="site-img">
                             <img src="img/infographic.png" alt="">
                         </div>
-                    </div> 
-                </section>
+                    </div>
+                </section> 
 
-                <!--ITEM 7-->
-                <section>
+                <!--ITEM 1-->
+                <section class="item rose">
+                    <p class="number">.007</p>
                     <div class="info-container">
-                        <h1 class="color">07.</h1>
                         <p>Geanimeerde lyric video.</p>
                         <br>
                         <p class="sm">Illustrator, After Effects.</p>
                     </div>
                     <div class="macbook-container">
                         <div class="site-img hidden">
-                            <video width="870" height="555" controls>
+                            <video controls>
                                 <source src="img/lyric-video.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -137,104 +130,50 @@
                 </section>
 
                 <!--SKILLS-->
-                <section>
-
-                    <div class="title">
+                <section class="light-grey">
+                    <div class="skillset">
                         <h1 class="color">Skillset.</h1>
-                    </div>
-                    <div class="grid-container">
-                        <div id="skills">
-                            <p>HTML, CSS:</p>
-                            <p>Javascript:</p>
-                            <p>Node.js:</p>
-                            <p>Wordpress</p>
-                            <p>Illustrator:</p>
-                            <p>After Effects, Premiere Pro:</p>
+
+                        <p>HTML, CSS.</p>
+                        <div class="skills">
+                            <div class="html level"></div>
                         </div>
-                        <div id="ratings">
-                            <p>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle checked"></i>
-                            </p>
-                            <p>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle checked"></i>
-                            </p>
-                            <p>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle checked"></i>
-                                <i class="fas fa-circle checked"></i>
-                                <i class="fas fa-circle checked"></i>
-                            </p>                            
-                            <p>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle checked"></i>
-                                <i class="fas fa-circle checked"></i>
-                            </p>     
-                            <p>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle checked"></i>
-                                <i class="fas fa-circle checked"></i>
-                            </p>                            
-                            <p>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle checked"></i>
-                                <i class="fas fa-circle checked"></i>
-                                <i class="fas fa-circle checked"></i>
-                            </p>
+
+                        <p>JavaScript.</p>
+                        <div class="skills">
+                            <div class="javascript level"></div>
                         </div>
+
+                        <p>Node.js, EJS.</p>
+                        <div class="skills">
+                            <div class="node level"></div>
+                        </div>
+
+                        <p>WordPress.</p>
+                        <div class="skills">
+                            <div class="wordpress level"></div>
+                        </div>
+
+                        <p>Illustrator.</p>
+                        <div class="skills">
+                            <div class="illustrator level"></div>
+                        </div>
+
+                        <p>After Effects, Premiere Pro.</p>
+                        <div class="skills">
+                            <div class="premiere level"></div>
+                        </div>
+
+                        <p class="sm-2">(Ook nog photoshop, Indesign, en een beetje php.)</p>
                     </div>
-                    <p class="sm">(Ook nog photoshop, Indesign, en een beetje php.)</p>
                 </section>
 
-                <!--CONTACT-->
-                <section>
-                    <p class="sm-2"><span class="color">CONTACT</span>: davy.lebruyn@student.ap.be</p>
+                <!--SKILLS-->
+                <section class="footer">
+                    <p>Gemaakt door Davy Le Bruyn - Custom in HTML en CSS.</p>
                 </section>
+
             </div>
-        </div>
-
-
-        <script src="js/reveal.js"></script>
-        <script>
-            Reveal.initialize({
-                dependencies: [
-                    { src: 'plugin/markdown/marked.js' },
-                    { src: 'plugin/markdown/markdown.js' },
-                    { src: 'plugin/notes/notes.js', async: true },
-                    { src: 'plugin/highlight/highlight.js', async: true }
-                ]
-            });
-        </script>
+        </main>
     </body>
 </html>

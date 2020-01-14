@@ -1,138 +1,261 @@
 body {
-    /*    background-color: beige;*/
-    font-family: 'Gelasio', serif;
+    overflow: none;
+    margin: 0;
+    font-family: museo-sans, sans-serif;
 }
 
-li {
+section {
+    position: relative;
+}
+
+h1 {
+    font-size: 200%;
+    font-family: museo-sans-rounded, sans-serif;
+    font-weight: 700;
+    color: #4A4A4A;
     padding: 5px 0;
-    line-height: 16pt;
 }
 
-p {
-    line-height: 18pt;
+button {
+    color: white;
+    padding: 15px 20px;
+    margin: 15px 0 40px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    transition: all 0.4s ease 0s;
 }
 
-.arrow {
-    height: 120px;
-    width: auto;
-    position: absolute;
-    left: 160px;
-    top: 250px;
-    z-index: 1;
+button:hover {
+    -webkit-box-shadow: 0px 5px 40px -15px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -15px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    background-color: #005BA9;
 }
 
-.arrow-2 {
-    height: 100px;
-    width: auto;
-    position: absolute;
-    left: 250px;
-    top: 500px;
-}
-
-.color {
-    color: #ffcc00;
-}
-
-.macbook-container {
-    background-image: url("../img/macbook.png");
-    width: 1327px;
-    height: 716px;
-    transform: scale(0.7)
-}
-
-.iphone-container {
-    background-image: url("../img/iphone.png");
-    width: 419px;
-    height: 840px;
-    transform: scale(0.6);
-    margin-left: 40%;
+#about {
     position: relative;
-    bottom: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20% 0 10%;
 }
 
-.site-img {
-    width: 870px;
-    height: 555px;
-    overflow: auto;
-    margin: 0 auto;
-    position: relative;
-    top: 50px;
+#about p {
+    line-height: 25px;
 }
 
-.site-img img {
-    width: 870px;
-    height: auto;
+#about h1, #about p {
+    margin: auto;
 }
 
-.mobile-img {
-    overflow: auto;
-    margin: 0 auto;
-    position: relative;
-    top: 110px;
+.blue {
+    background-color: #005BA9;
 }
 
-.mobile-img img {
-    width: 350px;
-    height: auto;
+.light-blue {
+    background-color: #009EE2;
 }
 
-.site-html {
-    overflow: auto;
-    margin: 0 auto;
-    position: relative;
-    top: 50px;
+.green {
+    background-color: #B4DDBF;
 }
 
-.info-container {
-    position: absolute;
-    top: 100px;
-    width: 300px;
-    text-align: initial;
+.tourqoise {
+    background-color: #54E7C7;
 }
 
-.poster {
-    transform: scale(0.9);
-    margin-left: 30%;
+.yellow {
+    background-color: #F4B93D;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
+.rose {
+    background-color: #EABAD8;
 }
 
-#skills {
-    width: 200px;
-    text-align: right;
-    padding-left: 200px;
+.light-grey {
+    background-color: #F4F3F3;
 }
 
-#ratings {
-    width: 200px;
-    padding-right: 200px;
+.white {
+    background-color: ##FAFAFA;
+}
+
+.grey {
+    background-color: #4A4A4A;
+}
+
+.grid-container-height, .item {
+    height: 100vh;
+}
+
+.item {
+    color: white;
+    font-size: 90%;
 }
 
 .sm {
-    font-size: 70%;
+    font-weight: bold;
 }
 
 .sm-2 {
     font-size: 80%;
 }
 
+.overflow {
+    overflow: auto;
+}
+
 .hidden {
     overflow: hidden;
-    background-color: black;
 }
 
-.checked {
-    color: #e3e3e3;
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 65%;
 }
 
-.title {
+#about {
+
+}
+
+.number {
     position: absolute;
-    top: -100px;
+    top: 50px;
+    left: 50px; 
 }
 
-.transform {
-    transform: scale(0.7);
+.info-container {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 300px;
+}
+
+.macbook-container {
+    background-image: url("../img/macbook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: scale(0.8);
+    position: relative;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4.8%;
+    bottom: 5%;
+}
+
+.site-img {
+    width: 66%;
+    height: 0;
+    padding-bottom: 42%;
+    overflow: auto;
+    position: relative;
+    background-color: black;
+    border: grey solid 1px;
+}
+
+.site-img img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.site-img video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 5%;
+}
+
+.img-container-1 {
+    background:url("../img/iphone-site.png");
+}
+
+.img-container-2 {
+    background:url("../img/poster-fleuramour.png");
+}
+
+.img-container-3 {
+    background:url("../img/poster-gravity.png");
+}
+
+.img-container-1, .img-container-2, .img-container-3 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: inherit;
+    transform: scale(0.6);
+}
+
+.img-container img {
+    max-width: 70vh;
+    max-height: 100%;
+}
+
+.skillset {
+    width: 70%;
+    margin: 0 20% 0 10%;
+    padding: 10% 0;
+}
+
+.skillset h1 {
+    margin-bottom: 20px;
+}
+
+.skills {
+    width: 100%;
+    background-color: #FAFAFA;
+    height: 20px;
+    margin: 20px 0;
+    border-radius: 25px;
+}
+
+.level {
+    height: 20px;
+    background-color: #54E7C7;
+    border-radius: 25px;
+}
+
+.html {width: 90%;}
+.javascript {width: 90%;}
+.node {width: 70%;}
+.wordpress {width: 75%;}
+.illustrator {width: 85%;}
+.premiere {width: 70%;}
+
+.footer {
+    padding: 30px;
+    color: white;
+    font-size: 80%;
+    text-align: center;
+    background-color: #222222;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+@media only screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+
+    .macbook-container {
+        transform: scale(0.95);
+    }
 }
