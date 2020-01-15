@@ -1,0 +1,290 @@
+body {
+    background-color: #FAFAFA;
+}
+
+main {
+    width: 99vw;
+    height: 100vh;
+    margin: auto;
+    font-family: museo-sans, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 15%;
+    background-color: #FAFAFA
+}
+
+h1 {
+    text-align: center;
+}
+
+.title {
+    font-size: 130%;
+    font-family: museo-sans-rounded, sans-serif;
+    font-weight: bolder;
+    margin: 5% 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.logo {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.logo img {
+    height: auto;
+    width: 150px;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform:scale(1.05);
+}
+
+.wwf
+{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.wwf li {
+    cursor: pointer;
+    font-size: 100%;
+    padding: 15px;
+}
+
+.wwf li:not(:last-child):not(.logo):not(:first-child) {
+    margin: 0 15px;
+}
+
+.wwf li:hover:not(.logo) {
+    border-bottom: 1px solid black;
+}
+
+button {
+    margin-top: 5px;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Fjalla One', sans-serif;
+    border: 1px solid #FAFAFA;
+    color: #FAFAFA;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: #FAFAFA;
+    border: 1px solid #FAFAFA;
+}
+
+.adopt button {
+    border: solid 1px #222222;
+    color: #222222;
+}
+
+.adopt button:hover {
+    color: #FAFAFA;
+    background-color: #222222;
+}
+
+.picture button, .picture-2 button {
+    color: #FAFAFA;
+}
+
+.picture button:hover, .picture-2 button:hover {
+    color: #222222;
+}
+
+.picture {
+    background-image: url("../img/bos.jpg");
+}
+
+.picture-2 {
+    background-image: url("../img/tijger.jpg");
+}
+
+.picture, .picture-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.picture *, .picture-2 * {
+    margin: 15px;
+}
+
+.picture h1, .picture-2 h1 {
+    font-size: 150%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.sm {
+    font-size: 80%;
+}
+
+#protect {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding: 5% 5%;
+    background-color: #FAFAFA;
+}
+
+#protect h1, #difference h1 {
+
+}
+
+.article {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: #222222;
+    color: #FAFAFA;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+}
+
+.article h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.article p {
+    padding: 10px 5% 50px 5%;
+    text-align: center;
+}
+
+#difference {
+    display: grid;
+    background-color: #FAFAFA;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding: 0 5% 5% 5%;
+}
+
+.adopt {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: #F4F3F3;
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15% 0; 
+}
+
+.adopt * {
+    margin: 10px 0;
+}
+
+.adopt h2, .article h2 {
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FAFAFA;
+    background-color: #222222;
+}
+
+.footer h2, footer p {
+    padding: 10px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    padding: 0 10% 1% 10%;
+}
+
+.footer h2 {
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+@media only screen and (max-width: 1000px) {
+    .wwf li:not(.logo) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    main::-webkit-scrollbar {
+        display: none;
+    }
+    
+    main {
+        -ms-overflow-style: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #protect {
+        grid-template-columns: 50% 50%;
+        padding: 0 5% 5% 5%;
+        grid-gap: 40px 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #difference {
+        grid-template-columns: 33% 33% 33%;
+        padding: 0 5% 5% 5%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #protect {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    main {
+        width: 80%;
+    }
+}
